@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeziRehberiActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtyerbilgisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yer Bilgisi"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@tools:sample/avatars"
+            android:translationX="80dp" />
+
+        <TextView
+            android:id="@+id/txtulkebilgisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ülke Bilgisi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtsehirbilgisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Şehir Bilgisi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txttarihce"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Tarihçe"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtsehirbilgisi" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/txthakkinda"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="200dp"
+                android:text="Hakkında"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txthakkinda"
+                tools:ignore="NotSibling" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
